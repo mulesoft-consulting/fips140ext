@@ -23,7 +23,7 @@ To use this extension:
 5. Copy the initFips.xml file from the root of this project to the root directory of your Mule project. This XML file initializes the 
 fips-140 extension as a new cryptography provider in the JVM.  
 6. You can verify that the libraries are being loaded properly by running your Mule project and examining your log file.
-You should see something log entries like the following:
+You should see log entries like these during the startup process:
     ~~~
     fips140ext.internal.Fips140extConfiguration: Initializing FIPS-140 support...
     fips140ext.internal.Fips140extConfiguration: FIPS lib JCE sequence = x
