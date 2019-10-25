@@ -1,0 +1,19 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:fips140ext="http://www.mulesoft.org/schema/mule/fips140ext"
+      xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+          http://www.mulesoft.org/schema/mule/fips140ext http://www.mulesoft.org/schema/mule/fips140ext/current/mule-fips140ext.xsd">
+
+    <fips140ext:config name="config" configId="configId">
+        <fips140ext:connection requiredParameter="aValue" />
+    </fips140ext:config>
+
+    <flow name="sayHiFlow">
+        <fips140ext:say-hi person="Mariano Gonzalez"/>
+    </flow>
+
+    <flow name="retrieveInfoFlow">
+        <fips140ext:retrieve-info config-ref="config"/>
+    </flow>
+
+</mule>
