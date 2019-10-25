@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:fips140ext="http://www.mulesoft.org/schema/mule/fips140ext" xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/fips140ext http://www.mulesoft.org/schema/mule/fips140ext/current/mule-fips140ext.xsd">
+    <fips140ext:config name="Fips140ext_Config" doc:name="Fips140ext Config" doc:id="05523fdb-0846-4cbd-bcba-26cb6d37f5ed" configId="fipsConfig" >
+        <fips140ext:connection requiredParameter="fips" />
+    </fips140ext:config>
+</mule>
